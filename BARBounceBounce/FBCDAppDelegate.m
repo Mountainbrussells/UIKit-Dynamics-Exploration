@@ -23,6 +23,7 @@
     self.window.rootViewController = vc;
     self.window.backgroundColor = [UIColor blueColor];
     [self.window makeKeyAndVisible];
+    NSLog(@"Application launched");
     return YES;
 }
 
