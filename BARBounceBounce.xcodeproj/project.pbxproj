@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90945C219B01EBD00ECF66F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90945C119B01EBD00ECF66F /* Foundation.framework */; };
+		C90945C419B01EBD00ECF66F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90945C319B01EBD00ECF66F /* CoreGraphics.framework */; };
+		C90945C619B01EBD00ECF66F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90945C519B01EBD00ECF66F /* UIKit.framework */; };
+		C90945C819B01EBD00ECF66F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90945C719B01EBD00ECF66F /* CoreData.framework */; };
+		C90945CE19B01EBD00ECF66F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C90945CC19B01EBD00ECF66F /* InfoPlist.strings */; };
+		C90945D019B01EBD00ECF66F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90945CF19B01EBD00ECF66F /* main.m */; };
+		C90945D419B01EBD00ECF66F /* FBCDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90945D319B01EBD00ECF66F /* FBCDAppDelegate.m */; };
+		C90945D919B01EBD00ECF66F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90945D819B01EBD00ECF66F /* Images.xcassets */; };
+		C90945E019B01EBD00ECF66F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90945DF19B01EBD00ECF66F /* XCTest.framework */; };
+		C90945E119B01EBD00ECF66F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90945C119B01EBD00ECF66F /* Foundation.framework */; };
+		C90945E219B01EBD00ECF66F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90945C519B01EBD00ECF66F /* UIKit.framework */; };
+		C90945E319B01EBD00ECF66F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90945C719B01EBD00ECF66F /* CoreData.framework */; };
+		C90945EB19B01EBD00ECF66F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C90945E919B01EBD00ECF66F /* InfoPlist.strings */; };
+		C90945ED19B01EBD00ECF66F /* BARBounceBounceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C90945EC19B01EBD00ECF66F /* BARBounceBounceTests.m */; };
+		C90945F919B01F3100ECF66F /* BARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90945F719B01F3100ECF66F /* BARViewController.m */; };
+		C90945FA19B01F3100ECF66F /* BARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90945F819B01F3100ECF66F /* BARViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90945E419B01EBD00ECF66F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90945B619B01EBD00ECF66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90945BD19B01EBD00ECF66F;
+			remoteInfo = BARBounceBounce;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C90945BE19B01EBD00ECF66F /* BARBounceBounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BARBounceBounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90945C119B01EBD00ECF66F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C90945C319B01EBD00ECF66F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C90945C519B01EBD00ECF66F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C90945C719B01EBD00ECF66F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C90945CB19B01EBD00ECF66F /* BARBounceBounce-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BARBounceBounce-Info.plist"; sourceTree = "<group>"; };
+		C90945CD19B01EBD00ECF66F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C90945CF19B01EBD00ECF66F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C90945D119B01EBD00ECF66F /* BARBounceBounce-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BARBounceBounce-Prefix.pch"; sourceTree = "<group>"; };
+		C90945D219B01EBD00ECF66F /* FBCDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBCDAppDelegate.h; sourceTree = "<group>"; };
+		C90945D319B01EBD00ECF66F /* FBCDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCDAppDelegate.m; sourceTree = "<group>"; };
+		C90945D819B01EBD00ECF66F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C90945DE19B01EBD00ECF66F /* BARBounceBounceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BARBounceBounceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90945DF19B01EBD00ECF66F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C90945E819B01EBD00ECF66F /* BARBounceBounceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BARBounceBounceTests-Info.plist"; sourceTree = "<group>"; };
+		C90945EA19B01EBD00ECF66F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C90945EC19B01EBD00ECF66F /* BARBounceBounceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BARBounceBounceTests.m; sourceTree = "<group>"; };
+		C90945F619B01F3100ECF66F /* BARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BARViewController.h; sourceTree = "<group>"; };
+		C90945F719B01F3100ECF66F /* BARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BARViewController.m; sourceTree = "<group>"; };
+		C90945F819B01F3100ECF66F /* BARViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BARViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C90945BB19B01EBD00ECF66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90945C419B01EBD00ECF66F /* CoreGraphics.framework in Frameworks */,
+				C90945C819B01EBD00ECF66F /* CoreData.framework in Frameworks */,
+				C90945C619B01EBD00ECF66F /* UIKit.framework in Frameworks */,
+				C90945C219B01EBD00ECF66F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90945DB19B01EBD00ECF66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90945E019B01EBD00ECF66F /* XCTest.framework in Frameworks */,
+				C90945E319B01EBD00ECF66F /* CoreData.framework in Frameworks */,
+				C90945E219B01EBD00ECF66F /* UIKit.framework in Frameworks */,
+				C90945E119B01EBD00ECF66F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C90945B519B01EBD00ECF66F = {
+			isa = PBXGroup;
+			children = (
+				C90945C919B01EBD00ECF66F /* BARBounceBounce */,
+				C90945E619B01EBD00ECF66F /* BARBounceBounceTests */,
+				C90945C019B01EBD00ECF66F /* Frameworks */,
+				C90945BF19B01EBD00ECF66F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C90945BF19B01EBD00ECF66F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90945BE19B01EBD00ECF66F /* BARBounceBounce.app */,
+				C90945DE19B01EBD00ECF66F /* BARBounceBounceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90945C019B01EBD00ECF66F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C90945C119B01EBD00ECF66F /* Foundation.framework */,
+				C90945C319B01EBD00ECF66F /* CoreGraphics.framework */,
+				C90945C519B01EBD00ECF66F /* UIKit.framework */,
+				C90945C719B01EBD00ECF66F /* CoreData.framework */,
+				C90945DF19B01EBD00ECF66F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C90945C919B01EBD00ECF66F /* BARBounceBounce */ = {
+			isa = PBXGroup;
+			children = (
+				C90945D219B01EBD00ECF66F /* FBCDAppDelegate.h */,
+				C90945D319B01EBD00ECF66F /* FBCDAppDelegate.m */,
+				C90945F619B01F3100ECF66F /* BARViewController.h */,
+				C90945F719B01F3100ECF66F /* BARViewController.m */,
+				C90945F819B01F3100ECF66F /* BARViewController.xib */,
+				C90945D819B01EBD00ECF66F /* Images.xcassets */,
+				C90945CA19B01EBD00ECF66F /* Supporting Files */,
+			);
+			path = BARBounceBounce;
+			sourceTree = "<group>";
+		};
+		C90945CA19B01EBD00ECF66F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90945CB19B01EBD00ECF66F /* BARBounceBounce-Info.plist */,
+				C90945CC19B01EBD00ECF66F /* InfoPlist.strings */,
+				C90945CF19B01EBD00ECF66F /* main.m */,
+				C90945D119B01EBD00ECF66F /* BARBounceBounce-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C90945E619B01EBD00ECF66F /* BARBounceBounceTests */ = {
+			isa = PBXGroup;
+			children = (
+				C90945EC19B01EBD00ECF66F /* BARBounceBounceTests.m */,
+				C90945E719B01EBD00ECF66F /* Supporting Files */,
+			);
+			path = BARBounceBounceTests;
+			sourceTree = "<group>";
+		};
+		C90945E719B01EBD00ECF66F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90945E819B01EBD00ECF66F /* BARBounceBounceTests-Info.plist */,
+				C90945E919B01EBD00ECF66F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90945BD19B01EBD00ECF66F /* BARBounceBounce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90945F019B01EBD00ECF66F /* Build configuration list for PBXNativeTarget "BARBounceBounce" */;
+			buildPhases = (
+				C90945BA19B01EBD00ECF66F /* Sources */,
+				C90945BB19B01EBD00ECF66F /* Frameworks */,
+				C90945BC19B01EBD00ECF66F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BARBounceBounce;
+			productName = BARBounceBounce;
+			productReference = C90945BE19B01EBD00ECF66F /* BARBounceBounce.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C90945DD19B01EBD00ECF66F /* BARBounceBounceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90945F319B01EBD00ECF66F /* Build configuration list for PBXNativeTarget "BARBounceBounceTests" */;
+			buildPhases = (
+				C90945DA19B01EBD00ECF66F /* Sources */,
+				C90945DB19B01EBD00ECF66F /* Frameworks */,
+				C90945DC19B01EBD00ECF66F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90945E519B01EBD00ECF66F /* PBXTargetDependency */,
+			);
+			name = BARBounceBounceTests;
+			productName = BARBounceBounceTests;
+			productReference = C90945DE19B01EBD00ECF66F /* BARBounceBounceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90945B619B01EBD00ECF66F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FBCD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Angry Grouse Media";
+				TargetAttributes = {
+					C90945DD19B01EBD00ECF66F = {
+						TestTargetID = C90945BD19B01EBD00ECF66F;
+					};
+				};
+			};
+			buildConfigurationList = C90945B919B01EBD00ECF66F /* Build configuration list for PBXProject "BARBounceBounce" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C90945B519B01EBD00ECF66F;
+			productRefGroup = C90945BF19B01EBD00ECF66F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90945BD19B01EBD00ECF66F /* BARBounceBounce */,
+				C90945DD19B01EBD00ECF66F /* BARBounceBounceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C90945BC19B01EBD00ECF66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90945FA19B01F3100ECF66F /* BARViewController.xib in Resources */,
+				C90945CE19B01EBD00ECF66F /* InfoPlist.strings in Resources */,
+				C90945D919B01EBD00ECF66F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90945DC19B01EBD00ECF66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90945EB19B01EBD00ECF66F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C90945BA19B01EBD00ECF66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90945D019B01EBD00ECF66F /* main.m in Sources */,
+				C90945F919B01F3100ECF66F /* BARViewController.m in Sources */,
+				C90945D419B01EBD00ECF66F /* FBCDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90945DA19B01EBD00ECF66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90945ED19B01EBD00ECF66F /* BARBounceBounceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90945E519B01EBD00ECF66F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90945BD19B01EBD00ECF66F /* BARBounceBounce */;
+			targetProxy = C90945E419B01EBD00ECF66F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C90945CC19B01EBD00ECF66F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90945CD19B01EBD00ECF66F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C90945E919B01EBD00ECF66F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90945EA19B01EBD00ECF66F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C90945EE19B01EBD00ECF66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C90945EF19B01EBD00ECF66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90945F119B01EBD00ECF66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BARBounceBounce/BARBounceBounce-Prefix.pch";
+				INFOPLIST_FILE = "BARBounceBounce/BARBounceBounce-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C90945F219B01EBD00ECF66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BARBounceBounce/BARBounceBounce-Prefix.pch";
+				INFOPLIST_FILE = "BARBounceBounce/BARBounceBounce-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C90945F419B01EBD00ECF66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BARBounceBounce.app/BARBounceBounce";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BARBounceBounce/BARBounceBounce-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BARBounceBounceTests/BARBounceBounceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C90945F519B01EBD00ECF66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BARBounceBounce.app/BARBounceBounce";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BARBounceBounce/BARBounceBounce-Prefix.pch";
+				INFOPLIST_FILE = "BARBounceBounceTests/BARBounceBounceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90945B919B01EBD00ECF66F /* Build configuration list for PBXProject "BARBounceBounce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90945EE19B01EBD00ECF66F /* Debug */,
+				C90945EF19B01EBD00ECF66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90945F019B01EBD00ECF66F /* Build configuration list for PBXNativeTarget "BARBounceBounce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90945F119B01EBD00ECF66F /* Debug */,
+				C90945F219B01EBD00ECF66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C90945F319B01EBD00ECF66F /* Build configuration list for PBXNativeTarget "BARBounceBounceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90945F419B01EBD00ECF66F /* Debug */,
+				C90945F519B01EBD00ECF66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C90945B619B01EBD00ECF66F /* Project object */;
+}
