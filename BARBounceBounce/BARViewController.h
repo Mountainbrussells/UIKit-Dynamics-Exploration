@@ -10,4 +10,5 @@
 
 @interface BARViewController : UIViewController
 
-@end
+-(IBAction)handlePan:(UIPanGestureRecognizer*)recognizer;
+-(IBAction)handlePan1:(UIPanGestureRecognizer*)recognizer;@end

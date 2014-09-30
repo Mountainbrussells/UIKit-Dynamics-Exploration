@@ -18,9 +18,10 @@
 
 // Drag Properties
 @property CGPoint currentLocation;
-@property (strong, nonatomic) UIAttachmentBehavior *attachment;
+// @property (strong, nonatomic) UIAttachmentBehavior *attachment;
 
 @property (weak, nonatomic) IBOutlet UIView *ballView;
+@property (weak, nonatomic) IBOutlet UIView *ball2View;
 @end
 
 @implementation BARViewController
@@ -39,21 +40,22 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
     self.ballView.backgroundColor = [UIColor redColor];
+    self.ball2View.backgroundColor = [UIColor yellowColor];
     
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
     // init gravity behavior with bounds of view
-    self.gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[self.ballView]];
+    self.gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[self.ballView, self.ball2View]];
     self.gravityBehavior.magnitude = 1.0;
     [self.animator addBehavior:self.gravityBehavior];
     
     // add collision behavior with bounds of the view
-    self.collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[self.ballView]];
+    self.collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[self.ballView, self.ball2View]];
     self.collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
     
     [self.animator addBehavior:self.collisionBehavior];
     
-    self.itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.ballView]];
+    self.itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.ballView, self.ball2View]];
     self.itemBehavior.elasticity = .75;
     [self.animator addBehavior:self.itemBehavior];
     
@@ -61,33 +63,82 @@
 
 // Touch gestures to move ball view
 
-- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+//- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    UITouch *theTouch = [touches anyObject];
+//    
+//    _currentLocation = [theTouch locationInView:self.view];
+//    
+//    _attachment = [[UIAttachmentBehavior alloc] initWithItem:_ballView attachedToAnchor:_currentLocation];
+//    
+//    [_animator addBehavior:_attachment];
+//}
+//
+//- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    UITouch *theTouch = [touches anyObject];
+//    _currentLocation = [theTouch locationInView:self.view];
+//    _attachment.anchorPoint = _currentLocation;
+//}
+//
+//- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//    [_animator removeBehavior:_attachment];
+//}
+//
+//- (void)didReceiveMemoryWarning
+//{
+//    [super didReceiveMemoryWarning];
+//    // Dispose of any resources that can be recreated.
+//}
+- (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer;
 {
-    UITouch *theTouch = [touches anyObject];
+    CGPoint translation = [recognizer translationInView:self.view];
+    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
+                                         recognizer.view.center.y + translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
     
-    _currentLocation = [theTouch locationInView:self.view];
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
-    _attachment = [[UIAttachmentBehavior alloc] initWithItem:_ballView attachedToAnchor:_currentLocation];
+    // init gravity behavior with bounds of view
+    self.gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[self.ballView, self.ball2View]];
+    self.gravityBehavior.magnitude = 1.0;
+    [self.animator addBehavior:self.gravityBehavior];
     
-    [_animator addBehavior:_attachment];
+    // add collision behavior with bounds of the view
+    self.collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[self.ballView, self.ball2View]];
+    self.collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+    
+    [self.animator addBehavior:self.collisionBehavior];
+    
+    self.itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.ballView, self.ball2View]];
+    self.itemBehavior.elasticity = .75;
+    [self.animator addBehavior:self.itemBehavior];
 }
 
-- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+- (IBAction)handlePan1:(UIPanGestureRecognizer *)recognizer;
 {
-    UITouch *theTouch = [touches anyObject];
-    _currentLocation = [theTouch locationInView:self.view];
-    _attachment.anchorPoint = _currentLocation;
-}
-
-- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [_animator removeBehavior:_attachment];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    CGPoint translation = [recognizer translationInView:self.view];
+    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
+                                         recognizer.view.center.y + translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+    
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    
+    // init gravity behavior with bounds of view
+    self.gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[self.ballView, self.ball2View]];
+    self.gravityBehavior.magnitude = 1.0;
+    [self.animator addBehavior:self.gravityBehavior];
+    
+    // add collision behavior with bounds of the view
+    self.collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[self.ballView, self.ball2View]];
+    self.collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+    
+    [self.animator addBehavior:self.collisionBehavior];
+    
+    self.itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.ballView, self.ball2View]];
+    self.itemBehavior.elasticity = .75;
+    [self.animator addBehavior:self.itemBehavior];
 }
 
 @end
